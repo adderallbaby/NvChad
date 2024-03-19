@@ -1,5 +1,5 @@
 local options = {
-  ensure_installed = { "lua-language-server",  'stylua' , 'python-lsp-server', 'clang-format', 'pyink'}, -- not an option from mason.nvim
+  ensure_installed = { "lua-language-server",  'stylua' }, -- not an option from mason.nvim
 
   PATH = "skip",
 
