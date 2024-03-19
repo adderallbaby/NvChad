@@ -90,11 +90,11 @@ M.defaults = function()
       },
     },
   }
-  --require("lspconfig").pyink.setup{
-    --  on_attach = M.on_attach,
-   --   capabilities = M.capabilities,
-  --    on_init = M.on_init,
- -- }
+  require("lspconfig").pyink.setup{
+      on_attach = M.on_attach,
+      capabilities = M.capabilities,
+      on_init = M.on_init,
+  }
 end
 
 return M
