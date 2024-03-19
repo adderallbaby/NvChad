@@ -20,6 +20,8 @@ map("n", "<C-c>", "<cmd>%y+<CR>", { desc = "File Copy whole" })
 map("n", "<leader>n", "<cmd>set nu!<CR>", { desc = "Toggle Line number" })
 map("n", "<leader>rn", "<cmd>set rnu!<CR>", { desc = "Toggle Relative number" })
 map("n", "<leader>ch", "<cmd>NvCheatsheet<CR>", { desc = "Toggle NvCheatsheet" })
+  map("n", "F", vim.lsp.buf.format, {desc = "Lsp Format file"})
+
 
 --map("n", "<leader>fm", function()
  -- require("conform").format { lsp_fallback = true }
