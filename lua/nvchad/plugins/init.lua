@@ -8,7 +8,7 @@ return {
     opts = {
       formatters_by_ft = {
         lua = { "stylua" },
-        python = { "isort", "black" , "autopep8"},
+        python = { "isort", "black" , "autopep8", "ruff"},
 
       },
     },
