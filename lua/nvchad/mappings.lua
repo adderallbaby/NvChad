@@ -21,9 +21,10 @@ map("n", "<leader>n", "<cmd>set nu!<CR>", { desc = "Toggle Line number" })
 map("n", "<leader>rn", "<cmd>set rnu!<CR>", { desc = "Toggle Relative number" })
 map("n", "<leader>ch", "<cmd>NvCheatsheet<CR>", { desc = "Toggle NvCheatsheet" })
 
-map("n", "<leader>fm", function()
-  require("conform").format { lsp_fallback = true }
-end, { desc = "Format Files" })
+--map("n", "<leader>fm", function()
+ -- require("conform").format { lsp_fallback = true }
+--end, { desc = "Format Files" })
+map("n", "<leader>fm", vim.lsp.buf.format(), {desc = "Format file"})
 
 -- global lsp mappings
 map("n", "<leader>lf", vim.diagnostic.open_float, { desc = "Lsp floating diagnostics" })
