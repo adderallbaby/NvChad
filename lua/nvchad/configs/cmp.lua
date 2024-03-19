@@ -1,5 +1,5 @@
 local cmp = require "cmp"
-vim.api.nvim_set_hl(0,"MySel", {bg="#858ca1", fg="#59daeb", bold=true, italic=true})
+vim.api.nvim_set_hl(0,"MySel", {bg="#464954", fg="#59daeb", bold=true, italic=true})
 
 dofile(vim.g.base46_cache .. "cmp")
 
