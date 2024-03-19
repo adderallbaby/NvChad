@@ -1,18 +1,19 @@
 local cmp = require "cmp"
+vim.api.nvim_set_hl(0,"MySel", {bg="#858ca1", fg="red", bold=true, italic=true}),
 
 dofile(vim.g.base46_cache .. "cmp")
-local cmp_ui = require("chadrc").ui.cmp
+
+local cmp_ui = require("nvconfig").ui.cmp
 local cmp_style = cmp_ui.style
 
 local field_arrangement = {
-  atom = { "kind", "abbr", "menu"},
+  atom = { "kind", "abbr", "menu" },
   atom_colored = { "kind", "abbr", "menu" },
-  
 }
 
 local formatting_style = {
   -- default fields order i.e completion word + item.kind + item.kind icons
-  fields = field_arrangement[cmp_style] or {  "abbr", "kind","menu" },
+  fields = field_arrangement[cmp_style] or { "abbr", "kind", "menu" },
 
   format = function(_, item)
     local icons = require "nvchad.icons.lspkind"
@@ -42,8 +43,7 @@ local function border(hl_name)
     { "╰", hl_name },
     { "│", hl_name },
   }
-end 
-
+end
 
 local options = {
   completion = {
@@ -52,12 +52,9 @@ local options = {
 
   window = {
     completion = {
-      border="double",
-      vim.api.nvim_set_hl(0,"MySel", {bg="#858ca1", fg="red", bold=true, italic=true}),
-
-      --side_padding = (cmp_style ~= "atom" and cmp_style ~= "atom_colored") and 1 or 0,
+      side_padding = (cmp_style ~= "atom" and cmp_style ~= "atom_colored") and 1 or 0,
       winhighlight = "Normal:CmpPmenu,CursorLine:MySel,Search:None",
-      scrollbar = true,
+      scrollbar = false,
     },
     documentation = {
       border = border "CmpDocBorder",
@@ -74,7 +71,7 @@ local options = {
 
   mapping = {
     ["<C-p>"] = cmp.mapping.select_prev_item(),
-    ["<C-u>"] = cmp.mapping.select_next_item(),
+    ["<C-n>"] = cmp.mapping.select_next_item(),
     ["<C-d>"] = cmp.mapping.scroll_docs(-4),
     ["<C-f>"] = cmp.mapping.scroll_docs(4),
     ["<C-Space>"] = cmp.mapping.complete(),
