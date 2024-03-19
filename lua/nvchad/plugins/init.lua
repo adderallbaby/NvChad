@@ -8,12 +8,20 @@ return {
     opts = {
       formatters_by_ft = {
         lua = { "stylua" },
+        python = { "isort", "black" },
+
       },
     },
     config = function(_, opts)
       require("conform").setup(opts)
     end,
-  },
+    vim.api.nvim_create_autocmd("BufWritePre", {
+    pattern = "*",
+    callback = function(args)
+      require("conform").format({ bufnr = args.buf })
+  end,
+})
+  } ,
 
   {
     "nvim-treesitter/nvim-treesitter",
