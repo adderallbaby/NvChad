@@ -57,7 +57,11 @@ return {
       require("mason").setup(opts)
       require("mason-lspconfig").setup()
 
-
+      require("lspconfig").pyink.setup{
+      on_attach = M.on_attach,
+       capabilities = M.capabilities,
+     on_init = M.on_init,
+     }
       -- custom nvchad cmd to install all mason binaries listed
       vim.api.nvim_create_user_command("MasonInstallAll", function()
         if opts.ensure_installed and #opts.ensure_installed > 0 then
