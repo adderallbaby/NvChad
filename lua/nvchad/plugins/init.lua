@@ -55,6 +55,8 @@ return {
     config = function(_, opts)
       dofile(vim.g.base46_cache .. "mason")
       require("mason").setup(opts)
+      require("mason-lspconfig").setup()
+
 
       -- custom nvchad cmd to install all mason binaries listed
       vim.api.nvim_create_user_command("MasonInstallAll", function()
