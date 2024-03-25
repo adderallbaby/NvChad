@@ -17,6 +17,9 @@ return {
     end,
 
   } ,
+  { 'ivyl/highlight-annotate.nvim', config = function()
+  require'highlight-annotate'.setup({})
+end },
 
   {
     "nvim-treesitter/nvim-treesitter",
