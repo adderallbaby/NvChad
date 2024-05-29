@@ -10,7 +10,6 @@ return {
         lua = { "stylua" },
         python = { "isort", "black" , "autopep8", "ruff"},
         bash = {"shfmt"},
-        ["_"] = { "clang-format"},
 
       },
     },
