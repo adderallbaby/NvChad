@@ -9,6 +9,7 @@ return {
       formatters_by_ft = {
         lua = { "stylua" },
         python = { "isort", "black" , "autopep8", "ruff"},
+        bash = {"shfmt"},
         ["_"] = { "clang-format"},
 
       },
