@@ -7,7 +7,7 @@ M.ui = {
   hl_override = {},
   changed_themes = {      onedark = {
          base_16 = {
-            base00 = "#mycol",
+            base00 = "#ffffff",
          },
          base_30 = {
             red = "#mycol",
