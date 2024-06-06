@@ -10,8 +10,8 @@ M.ui = {
             base00 = "#ffffff",
          },
          base_30 = {
-            red = "#mycol",
-            white = "#mycol",
+            red = "#ffffff",
+            white = "#ffffff",
          },
       },},
   theme_toggle = { "onedark", "one_light" },
