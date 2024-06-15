@@ -11,6 +11,12 @@ return {
         python = { "isort", "autopep8", "ruff"},
         bash = {"shfmt"},
         go = {"ast-grep"},
+        c = {"ast-grep"},
+        java = {"ast-grep"},
+        kotlin = {"ast-grep"},
+        javascript = {"ast-grep"},
+        cpp = {"ast-grep"},
+        html = {"ast-grep"},
 
       },
     },
