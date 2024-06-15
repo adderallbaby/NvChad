@@ -8,8 +8,9 @@ return {
     opts = {
       formatters_by_ft = {
         lua = { "stylua" },
-        python = { "isort", "black" , "autopep8", "ruff"},
+        python = { "isort", "autopep8", "ruff"},
         bash = {"shfmt"},
+        go = {"ast-grep"},
 
       },
     },
