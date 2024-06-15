@@ -9,7 +9,10 @@ local options = {
         kotlin = {"ast-grep"},
         javascript = {"ast-grep"},
         cpp = {"ast-grep"},
+
         html = {"ast-grep"},
+        ["_"] = { "trim_whitespace" },
+
   },
 
   -- format_on_save = {
