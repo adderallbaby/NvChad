@@ -1,5 +1,5 @@
 local options = {
-  ensure_installed = { "lua-language-server",  'stylua', 'pyink' , 'ast-grep', 'gofmt'}, -- not an option from mason.nvim
+  ensure_installed = { "lua-language-server",  'stylua', 'pyink' , 'ast-grep'}, -- not an option from mason.nvim
 
   PATH = "skip",
 
