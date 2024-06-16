@@ -11,7 +11,7 @@ local options = {
         cpp = {"ast-grep"},
 
         html = {"ast-grep"},
-        ["_"] = { "trim_whitespace" },
+        ["*"] = {"trip-whitespace", "codespell"}
 
   },
 
