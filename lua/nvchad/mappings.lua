@@ -22,9 +22,9 @@ map("n", "<leader>rn", "<cmd>set rnu!<CR>", { desc = "Toggle Relative number" })
 map("n", "<leader>ch", "<cmd>NvCheatsheet<CR>", { desc = "Toggle NvCheatsheet" })
 map("n", "<leader>ma", "<cmd>Telescope marks<CR>", { desc = "Telescope marks" })
 
-map("n", "<leader>fm", function()
-  require("conform").format { lsp_fallback = true }
-end, { desc = "Format Files" })
+--map("n", "<leader>fm", function()
+  --require("conform").format { lsp_fallback = true }
+--end, { desc = "Format Files" })
 
 --map("n", "<leader>fm", function()
  -- require("conform").format { lsp_fallback = true }
