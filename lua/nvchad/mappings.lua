@@ -17,6 +17,8 @@ map("n", "<C-k>", "<C-w>k", { desc = "Switch Window up" })
 map("n", "<C-s>", "<cmd>w<CR>", { desc = "File Save" })
 map("n", "<C-c>", "<cmd>%y+<CR>", { desc = "File Copy whole" })
 
+
+map("n", "<leader>o", "<cmd>ObsidianNew<CR>", { desc = "Obsidian new note" })
 map("n", "<leader>n", "<cmd>set nu!<CR>", { desc = "Toggle Line number" })
 map("n", "<leader>rn", "<cmd>set rnu!<CR>", { desc = "Toggle Relative number" })
 map("n", "<leader>ch", "<cmd>NvCheatsheet<CR>", { desc = "Toggle NvCheatsheet" })
